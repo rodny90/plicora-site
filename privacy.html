@@ -80,6 +80,7 @@ Email: <a href="mailto:plicora@rodmeister.com">plicora@rodmeister.com</a></p>
 <tr><th>Provider</th><th>How you sign in</th><th>What the app contacts</th></tr>
 <tr><td>Google (Gmail)</td><td>Google's own sign-in page (OAuth with PKCE)</td><td>Gmail API, Google token service</td></tr>
 <tr><td>Microsoft (Outlook.com, Hotmail, personal accounts)</td><td>Microsoft's own sign-in page (OAuth with PKCE)</td><td>Microsoft Graph, Microsoft token service</td></tr>
+<tr><td>Gmail (app password)</td><td>App password from your Google Account (2-Step Verification required)</td><td>imap.gmail.com and smtp.gmail.com over TLS</td></tr>
 <tr><td>iCloud, Yahoo, AOL, GMX, WEB.DE, Fastmail, Zoho, Yandex</td><td>App password you create at the provider</td><td>The provider's IMAP and SMTP servers over TLS</td></tr>
 </table></div>
 <p>Plicora never sees your Google or Microsoft password; it receives tokens from the provider. App passwords are stored only in your Keychain. These providers may process data outside the EU under their own terms. See their privacy policies, for example <a href="https://policies.google.com/privacy">Google</a>, <a href="https://privacy.microsoft.com/privacystatement">Microsoft</a>, <a href="https://www.apple.com/legal/privacy/">Apple</a>.</p>
