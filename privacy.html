@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Plicora Privacy Policy</title>
+<meta name="description" content="Privacy policy for Plicora, an iOS mail app. The developer collects no data.">
+<style>
+:root{--bg:#fff;--fg:#1b1d21;--muted:#5b616b;--line:#dfe2e7;--accent:#0a5fd0;--card:#f5f7fa}
+@media (prefers-color-scheme:dark){:root{--bg:#121316;--fg:#e8eaee;--muted:#a0a6b0;--line:#2b2e35;--accent:#7db3ff;--card:#1b1d22}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:1.5rem 1.1rem 4rem}
+nav{display:flex;gap:1rem;flex-wrap:wrap;padding:.8rem 1.1rem;border-bottom:1px solid var(--line);max-width:46rem;margin:0 auto}
+nav a{color:var(--accent);text-decoration:none}
+h1{font-size:1.9rem;line-height:1.25;margin:.5rem 0}
+h2{font-size:1.25rem;margin:2.2rem 0 .4rem;padding-top:.4rem;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;margin:1.2rem 0 .2rem}
+a{color:var(--accent)}
+p,ul{margin:.5rem 0}
+li{margin:.3rem 0}
+.meta{color:var(--muted);font-size:.9rem}
+.box{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:.8rem 1rem;margin:1rem 0}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{border:1px solid var(--line);padding:.45rem .6rem;text-align:left;vertical-align:top}
+th{background:var(--card)}
+.scroll{overflow-x:auto}
+code{font:.9em ui-monospace,Menlo,monospace;background:var(--card);padding:.1em .3em;border-radius:4px}
+</style>
+</head>
+<body>
+<nav><a href="privacy.html">Privacy</a><a href="support.html">Support</a><a href="support.html#impressum">Impressum</a></nav>
+<main>
+<h1>Plicora Privacy Policy</h1>
+<p class="meta">Plicora, formerly DuoMail. Last updated: 9 November 2026.</p>
+
+<div class="box"><strong>In short.</strong> Plicora connects your iPhone or iPad directly to the mail providers you add. The developer runs no server for the app and receives none of your mail, contacts, credentials or usage data. There are no ads, analytics, crash reporters or tracking in the app.</div>
+
+<h2>1. Who is responsible</h2>
+<p>Rodny Norvan Pekmezoglu, private individual, trading under the brand RodMeister, Germany.<br>
+Address: Simplonstr. 17, 10245 Berlin, Germany<br>
+Email: <a href="mailto:plicora@rodmeister.com">plicora@rodmeister.com</a></p>
+<p>The developer receives no personal data through the app, so he does not process the content of your mailboxes. Your mail stays between you, your device and your mail provider. The only personal data the developer handles is what you send in a support message, and what the web server logs when you visit these pages (sections 8 and 9).</p>
+
+<h2>2. What the app does with your data</h2>
+<h3>Connection to your mail provider</h3>
+<p>When you add an account, the app talks directly from your device to that provider: Google (Gmail), Microsoft (Outlook.com, Hotmail), Apple (iCloud Mail), Yahoo, AOL, GMX, WEB.DE, Fastmail, Zoho or Yandex. The provider is the controller of your mailbox, and its own privacy policy applies to what it does with your data. The developer is not part of this connection and sees nothing of it.</p>
+<h3>Stored on your device only</h3>
+<ul>
+<li><strong>Mail cache:</strong> message headers and bodies, folders, drafts, rules, templates, snooze and reminder data, queued actions and a search index are kept in a local SQLite database in the app's storage. It is protected by iOS Data Protection (available after first unlock) and excluded from device backups. Downloaded attachments are kept in a separate protected folder, also excluded from backups.</li>
+<li><strong>Sign-in data:</strong> OAuth tokens (Google, Microsoft) and app passwords (other providers) are stored in the iOS Keychain. They are readable only on this device after first unlock and are not migrated to other devices.</li>
+<li><strong>Settings and widget:</strong> app settings and a small snapshot for the unread-count widget (unread number, plus sender and subject of recent messages) are kept in local storage shared between the app and its widget on your device.</li>
+<li><strong>Notifications:</strong> reminders and rule notifications are scheduled locally on your device. Plicora does not use Apple Push Notification service and no push server exists.</li>
+</ul>
+<h3>Remote images in email</h3>
+<p>Remote images are blocked until you tap Load images for a message. If you do, <strong>your device itself</strong> downloads each image directly from the server named in the email. The "secured path" is an on-device safety check, not a proxy. The app accepts only HTTPS addresses that resolve to public internet addresses, blocks private network targets, follows at most three redirects, accepts only PNG, JPEG, GIF and WebP within size limits, uses no cookies, and re-encodes the image locally before display. No Plicora or RodMeister server is involved.</p>
+<p>The sender's image server can still see that a request was made, when, and your IP address, and may be able to link it to the message. This is inherent to remote images. Do not load images in mail you do not trust. Scripts are never executed; mail is displayed with JavaScript disabled.</p>
+<h3>Links</h3>
+<p>Links in mail open in your browser only after you confirm. The website you visit then applies its own privacy policy.</p>
+<h3>On-device AI</h3>
+<p>Summaries, draft improvement, search interpretation and category suggestions use Apple's on-device language model through the system API. They work only on supported devices with Apple Intelligence enabled. Plicora contains no code that sends mail text to the developer or to any AI service. Apple's own terms apply to the system feature.</p>
+<h3>Optional Mac companion</h3>
+<p>If you set up the companion on your own Mac, your iPhone connects to the host name or IP address you enter. Rules and scheduled sends are sent to it, encrypted with a pairing secret that only you hold (AES-GCM). If you tap "Share accounts and rules with companion", your account sign-in data is also copied into the Keychain of that Mac. The Mac then contacts your mail provider directly to send and process mail. By default the companion listens only on the Mac itself; it accepts connections from your network only if you start it that way. The developer receives none of this. You are responsible for the Mac and network you pair. Remove the accounts from the companion Mac when you stop using it.</p>
+
+<h2>3. Data the developer collects</h2>
+<p>None through the app. The app contains no analytics, advertising, attribution or crash-reporting SDKs and does not track you across other companies' apps or websites. This matches the app's Apple privacy manifest (no collected data types, no tracking domains).</p>
+<p>Apple, as operator of the App Store and TestFlight, may give the developer aggregated, non-identifying statistics (for example downloads, and crash data from users who share it with developers in iOS settings), and feedback you choose to send through TestFlight. Apple and your iOS settings control this.</p>
+
+<h2>4. Legal basis (GDPR)</h2>
+<ul>
+<li>Processing on your device to provide the mail functions you request is carried out by you as the user. The developer has no access to it and is neither controller nor processor of it.</li>
+<li>Support correspondence: Art. 6(1)(b) GDPR (answering your request) or Art. 6(1)(f) GDPR (legitimate interest in handling support).</li>
+<li>Server log data on these web pages: Art. 6(1)(f) GDPR (secure and stable delivery of the website).</li>
+</ul>
+<p>No processing based on consent takes place. These pages set no cookies and load no external scripts, fonts or trackers.</p>
+
+<h2>5. Third-party providers you connect</h2>
+<div class="scroll"><table>
+<tr><th>Provider</th><th>How you sign in</th><th>What the app contacts</th></tr>
+<tr><td>Google (Gmail)</td><td>Google's own sign-in page (OAuth with PKCE)</td><td>Gmail API, Google token service</td></tr>
+<tr><td>Microsoft (Outlook.com, Hotmail, personal accounts)</td><td>Microsoft's own sign-in page (OAuth with PKCE)</td><td>Microsoft Graph, Microsoft token service</td></tr>
+<tr><td>iCloud, Yahoo, AOL, GMX, WEB.DE, Fastmail, Zoho, Yandex</td><td>App password you create at the provider</td><td>The provider's IMAP and SMTP servers over TLS</td></tr>
+</table></div>
+<p>Plicora never sees your Google or Microsoft password; it receives tokens from the provider. App passwords are stored only in your Keychain. These providers may process data outside the EU under their own terms. See their privacy policies, for example <a href="https://policies.google.com/privacy">Google</a>, <a href="https://privacy.microsoft.com/privacystatement">Microsoft</a>, <a href="https://www.apple.com/legal/privacy/">Apple</a>.</p>
+
+<h2>6. Google API Services disclosure (Limited Use)</h2>
+<p>Plicora's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+<p>Scopes requested: <code>openid</code>, <code>email</code>, <code>gmail.modify</code> (read, organize, move and trash messages and labels, manage drafts) and <code>gmail.send</code> (send mail you compose). Permanent deletion is not requested.</p>
+<ul>
+<li>Plicora uses Gmail data only to show and manage your mail inside the app on your device, as you instruct.</li>
+<li>Gmail data is not transferred to the developer or any third party. The one exception is your own paired Mac companion, if you choose to share the account with it.</li>
+<li>The developer cannot read your Gmail data, because the app has no server component.</li>
+<li>Gmail data is not used for advertising or profiling, and is not used to train generalized AI or machine-learning models. On-device features process data locally under your control.</li>
+</ul>
+
+<h2>7. Microsoft permissions</h2>
+<p>Plicora requests the delegated permissions <code>Mail.ReadWrite</code>, <code>Mail.Send</code>, <code>User.Read</code>, <code>openid</code>, <code>email</code> and <code>offline_access</code>, and the same limits as above apply. Only personal Microsoft accounts are supported.</p>
+
+<h2>8. Support messages</h2>
+<p>If you email the developer, he receives your email address and the content of your message, and uses them only to reply. Please do not send passwords, tokens or full sign-in callback addresses. Support emails are deleted once the matter is closed, unless the law requires a longer period.</p>
+
+<h2>9. This website</h2>
+<p>These pages are static. They set no cookies, run no analytics and load no third-party resources. The hosting provider's server may temporarily log technical data such as your IP address, date and time, requested page and browser type, for security and operation.</p>
+
+<h2>10. Deleting your data</h2>
+<ul>
+<li><strong>In the app:</strong> remove an account in Settings ("Remove from this device"). This deletes its cached messages, search entries, drafts, queued actions and the stored token or app password from this device. Mail at the provider is not touched.</li>
+<li><strong>Deleting the app</strong> removes the local database and files. Remove your accounts first, so their Keychain entries are deleted as well.</li>
+<li><strong>Revoke access at the provider:</strong> Google at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, Microsoft at <a href="https://account.live.com/consent/Manage">account.live.com/consent/Manage</a>. For app passwords, use the security settings of Apple, Yahoo, AOL, GMX, WEB.DE, Fastmail, Zoho or Yandex.</li>
+<li><strong>Companion Mac:</strong> remove the account in the companion and delete its Keychain entries on the Mac.</li>
+</ul>
+
+<h2>11. Your rights</h2>
+<p>For data the developer holds about you (support messages, server logs) you have the rights of access (Art. 15), rectification (16), erasure (17), restriction (18), data portability (20) and objection (21 GDPR). You may also complain to a data protection supervisory authority, for example in your country of residence or in the German federal state where the developer is based. For data at your mail provider, contact the provider.</p>
+<p>Contact: <a href="mailto:plicora@rodmeister.com">plicora@rodmeister.com</a></p>
+
+<h2>12. Children</h2>
+<p>Plicora is not directed at children, and the developer does not knowingly collect data from them.</p>
+
+<h2>13. Changes</h2>
+<p>If the app changes in a way that affects this policy (for example, a push server is added), this page is updated before that release and the date above changes.</p>
+
+<p class="meta">Legal notice: see the <a href="support.html#impressum">Impressum</a>.</p>
+</main>
+</body>
+</html>

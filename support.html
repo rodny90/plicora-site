@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Plicora Support</title>
+<meta name="description" content="Support and FAQ for Plicora, a private multi-account mail app for iPhone and iPad.">
+<style>
+:root{--bg:#fff;--fg:#1b1d21;--muted:#5b616b;--line:#dfe2e7;--accent:#0a5fd0;--card:#f5f7fa}
+@media (prefers-color-scheme:dark){:root{--bg:#121316;--fg:#e8eaee;--muted:#a0a6b0;--line:#2b2e35;--accent:#7db3ff;--card:#1b1d22}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:1.5rem 1.1rem 4rem}
+nav{display:flex;gap:1rem;flex-wrap:wrap;padding:.8rem 1.1rem;border-bottom:1px solid var(--line);max-width:46rem;margin:0 auto}
+nav a{color:var(--accent);text-decoration:none}
+h1{font-size:1.9rem;line-height:1.25;margin:.5rem 0}
+h2{font-size:1.25rem;margin:2.2rem 0 .6rem;padding-top:.4rem;border-top:1px solid var(--line)}
+a{color:var(--accent)}
+p,ul,ol{margin:.5rem 0}
+li{margin:.3rem 0}
+.meta{color:var(--muted);font-size:.9rem}
+.box{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:.8rem 1rem;margin:1rem 0}
+details{border:1px solid var(--line);border-radius:10px;padding:.2rem 1rem;margin:.6rem 0;background:var(--card)}
+summary{cursor:pointer;font-weight:600;padding:.6rem 0}
+details[open] summary{margin-bottom:.2rem}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{border:1px solid var(--line);padding:.45rem .6rem;text-align:left;vertical-align:top}
+th{background:var(--bg)}
+.scroll{overflow-x:auto}
+code{font:.9em ui-monospace,Menlo,monospace;background:var(--bg);padding:.1em .3em;border-radius:4px}
+</style>
+</head>
+<body>
+<nav><a href="privacy.html">Privacy</a><a href="support.html">Support</a><a href="#impressum">Impressum</a></nav>
+<main>
+<h1>Plicora Support</h1>
+<p class="meta">Plicora, formerly DuoMail. A private multi-account mail app for iPhone and iPad.</p>
+
+<div class="box"><strong>Contact:</strong> <a href="mailto:plicora@rodmeister.com">plicora@rodmeister.com</a>. Include your iOS version, the provider (for example Gmail or iCloud), and the exact message shown in the app. Never send passwords, app passwords, tokens or full sign-in callback addresses.</div>
+
+<h2>Frequently asked questions</h2>
+
+<details open><summary>How do I add an account?</summary>
+<ol>
+<li>Open Add account.</li>
+<li>Tap your provider. For Google or Microsoft, sign in on the provider's own page and approve access. Plicora never sees your password and learns your address afterwards.</li>
+<li>For other providers, follow the steps shown in the app to create an app password. Enter your email address and that password. It is stored only on your device, in the Keychain.</li>
+<li>Optionally name the account (Personal, Work) and tap Done.</li>
+</ol>
+<p>Adding an account you already have just refreshes its sign-in. Microsoft sign-in supports personal accounts (Outlook.com, Hotmail), not work or school accounts.</p>
+</details>
+
+<details><summary>Where do I create an app password for my provider?</summary>
+<div class="scroll"><table>
+<tr><th>Provider</th><th>Where</th><th>Notes</th></tr>
+<tr><td>iCloud Mail</td><td>account.apple.com, Sign-In and Security, App-Specific Passwords</td><td>Never use your main Apple Account password.</td></tr>
+<tr><td>Yahoo</td><td>login.yahoo.com/account/security</td><td>Generate app password.</td></tr>
+<tr><td>AOL</td><td>login.aol.com/account/security</td><td>Generate app password.</td></tr>
+<tr><td>GMX</td><td>www.gmx.com (web settings)</td><td>Turn on IMAP access first.</td></tr>
+<tr><td>WEB.DE</td><td>web.de (settings)</td><td>Turn on IMAP access first.</td></tr>
+<tr><td>Fastmail</td><td>app.fastmail.com/settings/security/apps</td><td>Pick Mail (IMAP, POP, SMTP).</td></tr>
+<tr><td>Zoho Mail</td><td>accounts.zoho.com/home#security/app_password</td><td>Turn on IMAP access first. Choose your region when asked.</td></tr>
+<tr><td>Yandex</td><td>id.yandex.com/security/app-passwords</td><td>Allow mail clients (IMAP) in Yandex Mail settings.</td></tr>
+</table></div>
+<p>Plicora connects over IMAP (port 993, TLS) and SMTP, and verifies server certificates. If a connection fails, check IMAP access is enabled at the provider and the app password was copied exactly. Provider settings and network conditions can also block mail apps.</p>
+</details>
+
+<details><summary>Why does Google say the app is unverified?</summary>
+<p>Gmail access uses a "restricted" Google permission. Until Google has finished its verification of Plicora, sign-in can show a warning such as "Google hasn't verified this app", may be limited to test users that the developer has added, and may require you to sign in again every 7 days. This is Google's process, not a sign that your password is exposed: you sign in on Google's own page and Plicora only receives tokens.</p>
+<p>Only continue if you were invited as a tester or trust the source of your copy. If you are not a listed tester, Google will block the sign-in. Write to <a href="mailto:plicora@rodmeister.com">plicora@rodmeister.com</a> to ask for access. The warning disappears once verification is complete.</p>
+</details>
+
+<details><summary>A sign-in error appeared. What now?</summary>
+<p>Start sign-in again. If the same message returns, email it to support (the code in it is safe to share; it contains no tokens). Check that you approved mail and profile access on the provider's page, and that your Microsoft account is a personal account.</p>
+</details>
+
+<details><summary>How do I remove an account and its data?</summary>
+<p>In Settings, choose the account and tap Remove from this device. This deletes the cached messages, search entries, drafts, queued actions and the stored sign-in or app password from this device. Your mail on the provider is not touched.</p>
+<p>To also cut off access at the provider, revoke it there: Google at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, Microsoft at <a href="https://account.live.com/consent/Manage">account.live.com/consent/Manage</a>, or delete the app password in your provider's security settings. If you used the Mac companion, remove the account there too. If you delete the app, remove your accounts in it first.</p>
+</details>
+
+<details><summary>Why are images in email not shown?</summary>
+<p>Remote images are blocked by default because they can reveal that you opened a message and your IP address. Tap Load images on a message to download them. Your device fetches them directly from the sender's server after safety checks. Use this only for mail you trust.</p>
+</details>
+
+<details><summary>What is the Mac companion?</summary>
+<p>An optional helper that runs on your own Mac so rules and scheduled sends keep working while your iPhone is away. In Plicora Settings, open Trusted companion. On the Mac, run <code>duomail-companion pair</code> and paste the pairing secret into the app, then enter the Mac's host name or IP address. Traffic between the devices is encrypted. The Mac must be awake and reachable. Allow the local network permission when iOS asks.</p>
+<p>"Share accounts and rules with companion" copies your account sign-in data into that Mac's Keychain, so the Mac can contact your provider. Only do this on a Mac you control.</p>
+</details>
+
+<details><summary>Does Plicora collect my data or send mail to an AI service?</summary>
+<p>No. The developer receives no mail, contacts, credentials or usage data, and the app has no analytics or tracking. On-device summaries and writing help use Apple's on-device model, only on supported devices with Apple Intelligence enabled. See the <a href="privacy.html">Privacy Policy</a>.</p>
+</details>
+
+<details><summary>I do not get notifications for new mail.</summary>
+<p>New-mail push notifications are not available yet. Mail refreshes when the app is open and opportunistically in the background. Reminders and rule notifications can be enabled in Settings and run locally on your device.</p>
+</details>
+
+<h2 id="impressum">Impressum (legal notice, § 5 DDG)</h2>
+<p>Rodny Norvan Pekmezoglu<br>
+Brand: RodMeister<br>
+Simplonstr. 17, 10245 Berlin, Germany<br>
+Email: <a href="mailto:plicora@rodmeister.com">plicora@rodmeister.com</a></p>
+<p class="meta">Plicora is developed by a private individual. See also the <a href="privacy.html">Privacy Policy</a>.</p>
+</main>
+</body>
+</html>
